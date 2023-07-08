@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.example.onlineacademy.model.RatingDetailModel">
+        <table name="rating_detail" schema="bhjvyc4ogyzss34df0jl" catalog=""/>
+        <id-class class="com.example.onlineacademy.model.RatingDetailModelPK"/>
+        <attributes>
+            <id name="courseId">
+                <column name="courseId" precision="-1"/>
+            </id>
+            <id name="userId">
+                <column name="userId" precision="-1"/>
+            </id>
+            <basic name="rating">
+                <column name="rating" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="content">
+                <column name="content" nullable="false" length="45"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.example.onlineacademy.model.SubCategoryModel">
+        <table name="sub_category" schema="bhjvyc4ogyzss34df0jl" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="categoryId">
+                <column name="categoryId" precision="-1"/>
+            </basic>
+            <basic name="subCategoryName">
+                <column name="subCategoryName"/>
+            </basic>
+            <basic name="isDeleted">
+                <column name="isDeleted" precision="1"/>
+            </basic>
+            <basic name="lastUpdated">
+                <column name="lastUpdated" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.example.onlineacademy.model.UsersModel">
+        <table name="users" schema="bhjvyc4ogyzss34df0jl" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="email">
+                <column name="email"/>
+            </basic>
+            <basic name="username">
+                <column name="username"/>
+            </basic>
+            <basic name="password">
+                <column name="password"/>
+            </basic>
+            <basic name="refreshToken">
+                <column name="refreshToken" nullable="false"/>
+            </basic>
+            <basic name="role">
+                <column name="role" precision="-1"/>
+            </basic>
+            <basic name="isDeleted">
+                <column name="isDeleted" precision="1"/>
+            </basic>
+            <basic name="isUnlocked">
+                <column name="isUnlocked" precision="1"/>
+            </basic>
+            <basic name="lastUpdated">
+                <column name="lastUpdated" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

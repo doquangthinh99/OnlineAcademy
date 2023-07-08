@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.example.onlineacademy.model.SubCategoryModel">
+        <table name="sub_category" schema="bhjvyc4ogyzss34df0jl" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="categoryId">
+                <column name="categoryId" precision="-1"/>
+            </basic>
+            <basic name="subCategoryName">
+                <column name="subCategoryName"/>
+            </basic>
+            <basic name="isDeleted">
+                <column name="isDeleted" precision="1"/>
+            </basic>
+            <basic name="lastUpdated">
+                <column name="lastUpdated" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

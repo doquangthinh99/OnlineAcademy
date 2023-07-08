@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.example.onlineacademy.model.RegisterCourseModel">
+        <table name="register_course" schema="bhjvyc4ogyzss34df0jl" catalog=""/>
+        <id-class class="com.example.onlineacademy.model.RegisterCourseModelPK"/>
+        <attributes>
+            <id name="courseId">
+                <column name="courseId" precision="-1"/>
+            </id>
+            <id name="userId">
+                <column name="userId" precision="-1"/>
+            </id>
+            <basic name="isFavorite">
+                <column name="isFavorite" precision="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+  <persistence-unit name="default">
+    <mapping-file>resources/CategoryModel.xml</mapping-file>
+    <mapping-file>resources/CourseModel.xml</mapping-file>
+    <mapping-file>resources/CourseContentModel.xml</mapping-file>
+    <mapping-file>resources/RatingDetailModel.xml</mapping-file>
+    <mapping-file>resources/RegisterCourseModel.xml</mapping-file>
+    <mapping-file>resources/SubCategoryModel.xml</mapping-file>
+    <mapping-file>resources/UsersModel.xml</mapping-file>
+
+    <class>com.example.onlineacademy.model.CategoryModel</class>
+    <class>com.example.onlineacademy.model.CourseModel</class>
+    <class>com.example.onlineacademy.model.CourseContentModel</class>
+    <class>com.example.onlineacademy.model.RatingDetailModel</class>
+    <class>com.example.onlineacademy.model.RegisterCourseModel</class>
+    <class>com.example.onlineacademy.model.SubCategoryModel</class>
+    <class>com.example.onlineacademy.model.UsersModel</class>
+    <properties>
+      <property name="hibernate.connection.url"
+                value="jdbc:mysql://bhjvyc4ogyzss34df0jl-mysql.services.clever-cloud.com:3306/bhjvyc4ogyzss34df0jl"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="hibernate.connection.username" value="udrlrsa0lfuykid6"/>
+      <property name="hibernate.connection.password" value="96bftk4DwzLM5NhEP86W"/>
+    </properties>
+  </persistence-unit>
+    <persistence-unit name="persistenceUnit"/>
+</persistence>

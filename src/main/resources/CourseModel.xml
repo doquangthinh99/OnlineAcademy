@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.example.onlineacademy.model.CourseModel">
+        <table name="course" schema="bhjvyc4ogyzss34df0jl" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="courseName">
+                <column name="courseName" length="80"/>
+            </basic>
+            <basic name="subCategoryId">
+                <column name="subCategoryId" precision="-1"/>
+            </basic>
+            <basic name="teacherId">
+                <column name="teacherId" precision="-1"/>
+            </basic>
+            <basic name="imageThumbnail">
+                <column name="imageThumbnail" nullable="false"/>
+            </basic>
+            <basic name="imageCourse">
+                <column name="imageCourse" nullable="false"/>
+            </basic>
+            <basic name="price">
+                <column name="price" precision="-1"/>
+            </basic>
+            <basic name="salePrice">
+                <column name="salePrice" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="rating">
+                <column name="rating" precision="-1"/>
+            </basic>
+            <basic name="ratingCount">
+                <column name="ratingCount" precision="-1"/>
+            </basic>
+            <basic name="studentCount">
+                <column name="studentCount" precision="-1"/>
+            </basic>
+            <basic name="detailShort">
+                <column name="detailShort" nullable="false"/>
+            </basic>
+            <basic name="detailLong">
+                <column name="detailLong" nullable="false"/>
+            </basic>
+            <basic name="isCompleted">
+                <column name="isCompleted" nullable="false" precision="1"/>
+            </basic>
+            <basic name="isDeleted">
+                <column name="isDeleted" precision="1"/>
+            </basic>
+            <basic name="lastUpdated">
+                <column name="lastUpdated" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="createdDate">
+                <column name="createdDate" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
