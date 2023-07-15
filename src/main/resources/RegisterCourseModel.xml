@@ -3,7 +3,7 @@
                  version="3.0">
 
     <entity class="com.example.onlineacademy.model.RegisterCourseModel">
-        <table name="register_course" schema="bhjvyc4ogyzss34df0jl" catalog=""/>
+        <table name="register_course" schema="onlineAcademy" catalog=""/>
         <id-class class="com.example.onlineacademy.model.RegisterCourseModelPK"/>
         <attributes>
             <id name="courseId">

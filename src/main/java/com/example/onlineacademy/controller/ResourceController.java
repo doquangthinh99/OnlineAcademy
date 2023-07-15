@@ -35,4 +35,28 @@ public class ResourceController {
         headers.setContentLength(image.length);
         return new HttpEntity<byte[]>(image, headers);
     }
+
+    @GetMapping("/video")
+    @ResponseBody
+    public HttpEntity<byte[]> getVideo(@RequestParam("filename") String filename) {
+        byte[] image = new byte[0];
+        if(!filename.equals("undefined")) {
+            InputStream is = null;
+            try {
+                is = new ClassPathResource("/data/" + filename).getInputStream();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            try {
+                image = FileUtil.readAsByteArray(is);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.parseMediaType("video/mp4"));
+        headers.setContentLength(image.length);
+        return new HttpEntity<byte[]>(image, headers);
+    }
+
 }

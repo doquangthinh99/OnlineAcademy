@@ -21,10 +21,10 @@
     <class>com.example.onlineacademy.model.UsersModel</class>
     <properties>
       <property name="hibernate.connection.url"
-                value="jdbc:mysql://bhjvyc4ogyzss34df0jl-mysql.services.clever-cloud.com:3306/bhjvyc4ogyzss34df0jl"/>
+                value="jdbc:mysql://34.92.196.220:3306"/>
       <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
-      <property name="hibernate.connection.username" value="udrlrsa0lfuykid6"/>
-      <property name="hibernate.connection.password" value="96bftk4DwzLM5NhEP86W"/>
+      <property name="hibernate.connection.username" value="dqt"/>
+      <property name="hibernate.connection.password" value="123456"/>
     </properties>
   </persistence-unit>
     <persistence-unit name="persistenceUnit"/>
